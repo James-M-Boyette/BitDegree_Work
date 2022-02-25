@@ -1,3 +1,3 @@
-# BitDegree_Work
+# Sprint 15
 
-This is the work I've done for BitDegree: specifically, coursework development for their JavaScript learning module.
+<Description to follow ...>
