@@ -1,0 +1,83 @@
+<!-- 4.4, "Insert JQuery library & Test" -->
+
+<!-- Description: While applying to various companies, you've come across a few who have asked for a working understanding of JQuery in order to deal with their aging code base. Given that you're becoming a JS savant, you have decided to download it and give it a try. Dig up any notes and code files you might have from lesson 3.2 ("JavaScript Events"), because you are going to try and duplicate your vanilla JavaScript code:
+add JQuery to a copy of your 3.2 code file (or using the code in step 0),
+ -->
+
+<!-- STEP 0: If you were not able to re-create the code from lesson 3.2, paste the following into a new html document: -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.box {
+				width: 200px;
+				margin: 10px;
+				border: 4px solid black;
+				font-size: 300%;
+				text-align: center;
+				padding: 30px;
+			}
+		</style>
+		<title>
+			Sprint 10, Lesson 4.4 & 4.5, ("Insert JQuery Library & Test")
+		</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box" id="box1">Box 1</div>
+			<div class="box" id="box2">Box 2</div>
+		</div>
+		<script src="./4.4.script.js"></script>
+	</body>
+</html>
+
+<!-- STEP 1: Go to https://code.jquery.com/ -->
+<!-- Note: if this becomes broken, go to https://jquery.com/, click the download tab, and then look for language on the page that includes "to use the jquery CDN" -->
+
+<!-- STEP 2: Select the "minified" version and copy the link  -->
+<!-- Note: if, later, you want to look under the hood, go back and examine the "uncompressed" version -->
+
+<!-- STEP 3: Paste what you've copied into your html document -->
+<!-- Hint: it can go in the head of your document -->
+<!-- Hint: in theory, it is code that normally goes inside of <script> tags. However, see below note: -->
+<!-- Note: you should not need to create "script" tags, as what you've copied (likely) already has them.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.box {
+				width: 200px;
+				margin: 10px;
+				border: 4px solid black;
+				font-size: 300%;
+				text-align: center;
+				padding: 30px;
+			}
+		</style>
+		<!-- STEP 3 addition: -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<title>Sprint 10, Lesson 4.4, ("Insert JQuery Library & Test")</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box" id="box1">Box 1</div>
+			<div class="box" id="box2">Box 2</div>
+		</div>
+		<script src="./4.4.Assignment.script.js"></script>
+	</body>
+</html>
+
+<!-- STEP 4: Create a new JavaScript file named "4.4.script.js" -->
+<!-- See this for next assignment steps -->

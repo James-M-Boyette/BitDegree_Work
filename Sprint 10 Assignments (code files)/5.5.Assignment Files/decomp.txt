@@ -1,0 +1,5 @@
+Assignment 1 (5.5): "Change given code and prevent it from the bubbling"
+    - Need to watch video & take notes
+        > 5.2, "Event Bubbling & Capture"
+        > 5.3, "Event Delegation" ... Will this be useful for the assignment?
+    - Based on that, what more do we need to read-up on in the outline's text lessons?

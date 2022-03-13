@@ -1,0 +1,41 @@
+
+Assignment 1: Create a form with listeners
+Assignment 2: Add an event handler
+Assignment 3: Add mouse and key events
+
+// Notes to self:
+- These are easy assignments:
+  > Nothing new in those other videos
+  > There is some other stuff in the outline etc, but it's not clear to me that these should be relied on ... best to sprinkle one in as a non-essential
+  > They are not seperate assignments, either: they are about creating and upgrading a form
+  > Should a basic HTML File be supplied? Maybe suggest they build their own, but also provide one in case they struggle
+
+// Aside: This is too much at once for a student. They should have organized both the lesson content and the assignments to tackle one at a time .. but doing it this way will force the student to go back and synthesize something pretty wholly new from what they've seen
+
+  Assignment 1: Create a form with listeners
+  > A form should have input fields (3.2)
+    + A basic user sign-up would have 8 fields:
+        - First Name
+        - Last Name
+        - Address
+        - Apt #
+        - City
+        - State/Country
+        - Phone #
+        - 
+  > it should have listeners:
+    
+    + Have console.log's that register when any field is selected (for developer debugging)
+    + Have the field change background color & text size when onFocus, and revert to regular when on Blur
+
+Assignment 2: Add an event handler
+  > Add the same event handler to each field, logging on 'clickdown' the element
+  > Add an alert to the event 'onclick' which says ("Welcome! We're delighted to have you as part of the family!!")
+  > Add 'onfocus' and 'onblur' handlers so that we can get a better sense of whether the form is confusing, unengaging etc (logging "user away" and "user returned")
+
+Assignment 3: Add Mouse & Key events
+  + Have a console.log for when they click the 'submit' button, saying "user submitted data"
+  > Add mouse on and mouse off events for the submit button that make it slightly bigger and highlighted in the first case, and toggle back to normal in the second
+  > Test making the form smaller and grayed-out when the window is 'onblur' and normal when 'onfocus' or make the precursor, 'label' text bold and one font-size bigger when entering info
+  > Make all fields pre-populated with slightly opaque example text, and have that text disappear when the cursor selects the field to enter data
+  > Bonus: add a click/tick-box field with text for offering to sign them up to a newsletter, and a listner that logs a message 'user signed up' in terminal in place of sending data to the server. Have a mouse event change the text to "signed up", the color to something fun and celebratory, and the font or background color to something else exciting (bold/italic in the former case, or good contrast color )

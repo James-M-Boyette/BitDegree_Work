@@ -1,0 +1,87 @@
+<!-- Assignment 3.10: "Create a form with listeners"  -->
+<!-- STARTER CODE -->
+
+<!-- N/A -->
+
+<!-- Description: 
+	Your friend/parent etc wants to understand how on-line forms work. 
+OR
+	You've gotten an offer to do some piece-meal coding work from a job board: the customer would like for you to create the front end submission form for their site. They say they'll need all the standard pieces of shipping info for their customers. They would also like your code file to be pretty detailed in its comments and log messages so that they can make changes quickly in the future, if they decide to. In order to tackle this problem, you will need to break the project in sections: first, create a basic form - don't worry about buttons etc.; just 
+	- create the basic html layout, 
+	- give it the ability to take in and pass the user's entries, and 
+	- create some basic listeners to verify that what you've made is working as expected. 
+ -->
+
+<!-- STEP 1: Create an html document and paste the following "starter" text into it: -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sprint 10, Assignment 3.10 ("Create a form with listeners")</title>
+	</head>
+	<body>
+		<script src="./3.10.Assignment.script.js"></script>
+	</body>
+</html> -->
+
+<!-- STEP 2: Create a parent "form" element in the body of your HTML. Give it an ID, such as "signUpForm", and add some temporary text (like "...A form will go here...") to make sure that your html is visible & working. -->
+<!-- Hint: "form" is one of many html elements, and is written just like <div>, <li> and other elements! -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sprint 10, Assignment 3.10 ("Create a form with listeners")</title>
+	</head>
+	<body>
+		<form id="signUpForm">... A Form will go here ...</form>
+		<script src="./3.10.DEV.script.js"></script>
+	</body>
+</html> -->
+
+<!-- STEP 3: Create fields for the user to input data during their sign-up (as nested elements within the form element). You should have fields for the following seven pieces of data: First Name, Last Name, Address, Apt #, City, State/Country, and Phone #. Make sure to label each field with comments, so that the html is more read-able -->
+<!-- Hint: In Lesson 3.8, we used "label" & "input" elements to create the fields, and "break" elements to seperate them -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sprint 10, Assignment 3.10 ("Create a form with listeners")</title>
+	</head>
+	<body>
+		<form id="signUpForm">
+			... A Form will go here ...
+			<br />
+			<!-- First Name -->
+			<label for="fname">First Name:</label><br />
+            <input type="text" id="fname" name="fname"></input><br />
+			<!-- Last Name -->
+			<label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname"></input><br />
+			<!-- Address 1 -->
+			<label for="address1">Address:</label><br />
+            <input type="text" id="address1" name="address1"></input><br />
+			<!-- Address 2 -->
+			<label for="address2">Apartment etc.:</label><br />
+            <input type="text" id="address2" name="address2"></input><br />
+			<!-- City -->
+			<label for="userCity">City:</label><br />
+            <input type="text" id="userCity" name="userCity"></input><br />
+			<!-- State/Country -->
+			<label for="userState">State / Country:</label><br />
+            <input type="text" id="userState" name="userState"></input><br />
+			<!-- Phone # -->
+			<label for="userPhone">Phone #:</label><br />
+            <input type="text" id="userPhone" name="userPhone"></input><br />
+		</form>
+		<script src="./3.10.Assignment.script.js"></script>
+	</body>
+</html>
+
+<!-- STEP 4: Create a JavaScript file -->
+<!-- Internal Dev Note: (see that file for additional instructions)--> 

@@ -1,0 +1,26 @@
+Assignment 2.6: "DOM Methods in Practice"
+
+- Assignment 1.7: 
+    > Summary: Used .querySelector & .getElements to interact with two parent divs - each having a child div with unique text
+
+- Lesson 2.1: "DOM Properties" 
+    > Summary: Using Parent, Children, & Sibbling methods to grab elements in the DOM
+
+- Lesson 2.2: "DOM Methods" 
+    > Summary: Grabbing elements, changing their style attributes ... & Cross-Site-Scripting Attacks
+
+- Lesson 2.3: "Adding & Removing DOM Elements" 
+    > Summary: Adding & removing child elements using .removeChild, .appendChild, and using them in conjunction with a 'for' loop
+
+- Lesson 2.4: "DOM Styling"
+    > Summary: Styling Elemenst in the DOM - using two approaches: 
+        1. Interacting with style
+        2. Adding, removing, and toggling classes
+
+What does this assignment need to cover? Use methods to ...
+- Continue practicing the grabbing & storing of elements (using .querySelector/.getElement_ and .child/.parent/.sibling),
+- Add and remove (old and new) elements, and
+- Change the style attributes of these elements
+
+Start with a basic list, remove all of its elements, and then populate the html with a new list
+

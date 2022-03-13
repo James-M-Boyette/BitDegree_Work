@@ -1,0 +1,535 @@
+<!-- 6.2 Exit Assignment: Connect Four -->
+
+<!-- STEP 1: Create an HTML document with the following starter code-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style></style>
+	</head>
+	<body></body>
+</html>
+
+<!-- Create a parent we can target with JS and give CSS to if we want, later on -->
+<!-- STEP 2: In the body, create a parent div with the class of "grid", and a child div - with no class, but inner text of the number "1"; check that your webpage is displaying the 1 succesfully -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style></style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+		</div>
+	</body>
+</html>
+
+<!-- Create the squares/board spaces -->
+<!-- STEP 3: Since Connect Four is normally played on a vertical grid 7 spaces wide x 6 spaces tall, create another 41 child divs. Give the innertext of "35" and "42" to their respective ones-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style></style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+		</div>
+	</body>
+</html>
+
+<!-- Give grid styling -->
+<!-- STEP 4: Create css style entries in your header for 1) the ID of "grid" and 2) any divs that are nested under an element with the ID of "grid":  
+	- give them 1px solid black borders, 
+	- border radius' of 10px, 
+	- backgrounds that contrast (say, dark gray for the "grid" parent, and bright yellow for the children), and
+	- make the parent "grid" display flex and flex-wrap normally -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid black;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+			}
+
+			#grid div {
+				border: 1px solid black;
+				border-radius: 10px;
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+		</div>
+	</body>
+</html>
+
+<!-- Give grid squares size -->
+<!-- STEP 5: Give a symmetrical size to your children grid square divs (say, 60px by 60px) in the CSS, and give your parent element enough height and width to frame them.-->
+<!-- Hint: if you have 7*60 going across, and 6*60 going down, that would require at least 420x360 pixels ... but each square also has a border of 1 pixel on each side - so you will need to add 7*2 & 6*2 to those totals, respectively!-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid black;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+				height: 372px;
+				width: 434px;
+			}
+
+			#grid div {
+				border: 1px solid black;
+				border-radius: 10px;
+				background: yellow;
+				height: 60px;
+				width: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+		</div>
+	</body>
+</html>
+
+<!-- Add a "floor" -->
+<!-- STEP 6: Because Connect 4 disks fall down through the air and need to hit a "floor" to stop, add 7 more children divs after your 42'nd one, and give each of them the classes of "taken" and "floor" -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid black;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+				height: 372px;
+				width: 434px;
+			}
+
+			#grid div {
+				border: 1px solid black;
+				border-radius: 10px;
+				background: yellow;
+				height: 60px;
+				width: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+		</div>
+	</body>
+</html>
+
+<!-- Hide the floor tiles -->
+<!-- STEP 7: In order to hide these floor tiles from the player, create a new css entry for elements with the class of "floor"; give them borders that are 1 pixel, solid and white, and backgrounds that are white. Make sure to have these CSS properties override any conflicting, earlier formatting. -->
+<!-- Hint: use !important -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid black;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+				height: 372px;
+				width: 434px;
+			}
+
+			#grid div {
+				border: 1px solid black;
+				border-radius: 10px;
+				background: yellow;
+				height: 60px;
+				width: 60px;
+			}
+
+			.floor {
+				border: 1px solid white !important;
+				background: white !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+		</div>
+	</body>
+</html>
+
+<!-- Add JavaScript to begin creating play logic -->
+<!-- STEP 8: Create a Javascript file named "6.2.Assignment.script.js"-->
+<!-- See this document for next steps -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Connect Four Project (Assignment)</title>
+		<script src="./6.2.Assignment.script.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid black;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+				height: 372px;
+				width: 434px;
+			}
+
+			#grid div {
+				border: 1px solid black;
+				border-radius: 10px;
+				background: yellow;
+				height: 60px;
+				width: 60px;
+			}
+
+			.floor {
+				border: 1px solid white !important;
+				background: white !important;
+			}
+
+			.player-one {
+				background-color: red !important;
+				border-radius: 10px;
+			}
+			.player-two {
+				background-color: blue !important;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 id="result"></h3>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>35</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>42</div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+		</div>
+	</body>
+</html>

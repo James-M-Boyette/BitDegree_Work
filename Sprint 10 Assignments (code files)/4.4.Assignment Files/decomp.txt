@@ -1,0 +1,8 @@
+Assignment 1 (4.4): "Insert JQuery library"
+    - This looks to be very straight forward:
+    - Kevin shows that there's the "full" version (with full function & variable names, lots of white space etc so that Humans can read it easily), and the "minified" version, where things have been compacted (making it far less readable)
+    - Using the library is as simple as adding a script tag & refrence to the jquery site (there's a specific endpoint link, I think, for each version of jquery)
+
+Assignment 2 (4.5): "Moving a figure in the screen with JQuery"
+    - This is not clear at all: now lessons (video or text) exist demo'ing any specific "movement" behavior
+    - This should likely, therefore, be a lesson where we re-hash an older lesson OR practice other JS skills not covered in previous assignments (arrow events, mouse events, etc). Either recreate the boxes, or the "accept terms" box
